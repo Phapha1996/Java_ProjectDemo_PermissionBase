@@ -1,0 +1,79 @@
+1.准备好开发包：
+		1.1 mysql数据库驱动com.mysql.jdbc.Driver
+		1.2 用到连接池C3P0,pool.jar
+		1.3 BeanUtils.jar开发包
+		1.4 准备好数据库的创建
+		1.5 log4j.jar
+		1.6 apache dbutils
+		
+2.准备好分层:
+		显示层
+		2.1 web.contralloer
+		2.2 web.UI
+		------------
+		工具类
+		2.3 utils
+		------------
+		业务层
+		2.4 service
+		2.5 service.impl
+		------------
+		操作库层
+		2.6 dao
+		2.7 dao.impl
+		------------
+		javabean
+		2.8 domain
+		-------------
+		测试
+		2.9 test
+		-------------
+		
+		
+	3.创建数据库表
+	
+	create database privigeles;
+	use privigeles;
+	
+	
+	create table user(
+		id varchar(40) primary key,
+		username varchar(20) not null unique,
+		password varchar(20) not null
+	)character set utf8;
+	
+	
+	create table user_role(
+		id varchar(40) primary key,
+		user_id varchar(40),
+		role_id varchar(40),
+		foreign key(user_id) references user(id),
+		foreign key(role_id) references role(id)
+	)character set utf8;
+	
+	
+	create table role(
+		id varchar(40) primary key,
+		name varchar(20) not null unique,
+		discription varchar(255) 
+	)character set utf8;
+	
+	create table role_privilege(
+		id varchar(40) primary key,
+		role_id varchar(40),
+		privilege_id varchar(40),
+		foreign key(role_id) references role(id),
+		foreign key(privilege_id) references privilege(id)
+	)character set utf8;
+	
+	
+	create table privilege(
+		id varchar(40) primary key,
+		name varchar(20) not null unique,
+		discription varchar(255) 
+	)character set utf8;
+	
+	
+	
+	
+	

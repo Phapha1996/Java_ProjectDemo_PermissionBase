@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>GetListPrivilege</servlet-name>
+    <servlet-class>web.contrallor.GetListPrivilege</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddPrivilegeUI</servlet-name>
+    <servlet-class>web.UI.AddPrivilegeUI</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddPrivilegeServlet</servlet-name>
+    <servlet-class>web.contrallor.AddPrivilegeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeletePrivilege</servlet-name>
+    <servlet-class>web.contrallor.DeletePrivilege</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetListRole</servlet-name>
+    <servlet-class>web.contrallor.GetListRole</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddRoleUI</servlet-name>
+    <servlet-class>web.UI.AddRoleUI</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddRoleServlet</servlet-name>
+    <servlet-class>web.contrallor.AddRoleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddRolePrivilegeUI</servlet-name>
+    <servlet-class>web.UI.AddRolePrivilegeUI</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddRolePrivilege</servlet-name>
+    <servlet-class>web.contrallor.AddRolePrivilege</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RemoveRolePrivilege</servlet-name>
+    <servlet-class>web.contrallor.RemoveRolePrivilege</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetListUserole</servlet-name>
+    <servlet-class>web.contrallor.GetListUserole</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddUserUI</servlet-name>
+    <servlet-class>web.UI.AddUserUI</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddUserServlet</servlet-name>
+    <servlet-class>web.contrallor.AddUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddUserRoleUI</servlet-name>
+    <servlet-class>web.UI.AddUserRoleUI</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddUserRole</servlet-name>
+    <servlet-class>web.contrallor.AddUserRole</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RemoveUserRole</servlet-name>
+    <servlet-class>web.contrallor.RemoveUserRole</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetListResouce</servlet-name>
+    <servlet-class>web.contrallor.GetListResouce</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddResourceUI</servlet-name>
+    <servlet-class>web.UI.AddResourceUI</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddResourceServlet</servlet-name>
+    <servlet-class>web.contrallor.AddResourceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NeedPrivilegeUI</servlet-name>
+    <servlet-class>web.UI.NeedPrivilegeUI</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddResourcePrivilege</servlet-name>
+    <servlet-class>web.contrallor.AddResourcePrivilege</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RemoveResourcePrivilege</servlet-name>
+    <servlet-class>web.contrallor.RemoveResourcePrivilege</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteTest</servlet-name>
+    <servlet-class>testUseServlet.DeleteTest</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddTest</servlet-name>
+    <servlet-class>testUseServlet.AddTest</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateTest</servlet-name>
+    <servlet-class>testUseServlet.UpdateTest</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServletUI</servlet-name>
+    <servlet-class>web.UI.LoginServletUI</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>web.contrallor.Login</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <filter>
+  	<filter-name>CharacterFilter</filter-name>
+  	<filter-class>filter.CharacterFilter</filter-class>
+  		<init-param>
+  			<param-name>character</param-name>
+  			<param-value>UTF-8</param-value>
+  		</init-param>
+  	
+  </filter>
+
+  
+  <filter>
+  	<filter-name>ResourceFilter</filter-name>
+  	<filter-class>filter.ResourceFilter</filter-class>
+  </filter>
+  
+  
+
+  <servlet-mapping>
+    <servlet-name>GetListPrivilege</servlet-name>
+    <url-pattern>/servlet/GetListPrivilege</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddPrivilegeUI</servlet-name>
+    <url-pattern>/servlet/AddPrivilegeUI</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddPrivilegeServlet</servlet-name>
+    <url-pattern>/servlet/AddPrivilegeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeletePrivilege</servlet-name>
+    <url-pattern>/servlet/DeletePrivilege</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetListRole</servlet-name>
+    <url-pattern>/servlet/GetListRole</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddRoleUI</servlet-name>
+    <url-pattern>/servlet/AddRoleUI</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddRoleServlet</servlet-name>
+    <url-pattern>/servlet/AddRoleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddRolePrivilegeUI</servlet-name>
+    <url-pattern>/servlet/AddRolePrivilegeUI</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddRolePrivilege</servlet-name>
+    <url-pattern>/servlet/AddRolePrivilege</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemoveRolePrivilege</servlet-name>
+    <url-pattern>/servlet/RemoveRolePrivilege</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetListUserole</servlet-name>
+    <url-pattern>/servlet/GetListUserole</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUserUI</servlet-name>
+    <url-pattern>/servlet/AddUserUI</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUserServlet</servlet-name>
+    <url-pattern>/servlet/AddUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUserRoleUI</servlet-name>
+    <url-pattern>/servlet/AddUserRoleUI</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUserRole</servlet-name>
+    <url-pattern>/servlet/AddUserRole</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemoveUserRole</servlet-name>
+    <url-pattern>/servlet/RemoveUserRole</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetListResouce</servlet-name>
+    <url-pattern>/servlet/GetListResouce</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddResourceUI</servlet-name>
+    <url-pattern>/servlet/AddResourceUI</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddResourceServlet</servlet-name>
+    <url-pattern>/servlet/AddResourceServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NeedPrivilegeUI</servlet-name>
+    <url-pattern>/servlet/NeedPrivilegeUI</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddResourcePrivilege</servlet-name>
+    <url-pattern>/servlet/AddResourcePrivilege</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemoveResourcePrivilege</servlet-name>
+    <url-pattern>/servlet/RemoveResourcePrivilege</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteTest</servlet-name>
+    <url-pattern>/fage/DeleteTest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddTest</servlet-name>
+    <url-pattern>/fage/AddTest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateTest</servlet-name>
+    <url-pattern>/fage/UpdateTest</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServletUI</servlet-name>
+    <url-pattern>/servlet/LoginServletUI</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/servlet/Login</url-pattern>
+  </servlet-mapping>
+	
+	<filter-mapping>
+		<filter-name>CharacterFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>ResourceFilter</filter-name>
+		<url-pattern>/fage/*</url-pattern>
+	</filter-mapping>
+</web-app>
